@@ -5,7 +5,15 @@
 
     <body>
 
-    {% include layouts/header.html %}
+    {% if site.header-option == 1 %}
+      {% include layouts/header.html %}
+    {% endif %}
+    {% if site.header-option == 2 %}
+      {% include layouts/header-2.html %}
+    {% endif %}
+    {% if site.header-option == 3 %}
+      {% include layouts/header-3.html %}
+    {% endif %}
 
     {{ content }}
 

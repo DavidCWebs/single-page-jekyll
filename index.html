@@ -2,38 +2,13 @@
 layout: frontpage
 ---
 <div id="main-content">
-  <div class="first_background" id="top">
-    <div class="intro-header">
-      <div class="container">
-        <div class="row">
-          <div id="text-intro" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-            <div class="intro-message">
-              {% markdown frontpage/intro-title.md %}
-              <div class="lead">
-                {% markdown frontpage/intro.md %}
-              </div>
-              <div class="intro-phone">
-                <a href="#" class="nonclick-phone btn btn-default btn-lg">
-                  <i class="fa fa-phone fa-fw"></i>
-                  <span class="network-name">Call {{ site.phone }}</span>
-                </a>
-                <a href="tel:{{ site.phonenumber }}" class="click-phone btn btn-default btn-lg">
-                  <i class="fa fa-phone fa-fw"></i>
-                  <span class="network-name">Click to Call</span>
-                </a>
-              </div>
-              <!--{% include general/social.html %}--><!-- This brings through a link to Facebook and an email link -->
-              <div class="page-scroll">
-                <a href="#internal-main">
-                  <i class="fa fa-chevron-down"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+  {% if site.intro-section == "full-width-1" %}
+  {% include frontpage/full-width-1.html %}
+{% endif %}
+{% if site.intro-section == "full-width-2" %}
+    {% include frontpage/full-width-2.html %}
+{% endif %}
+{% if site.include-section-1 == true %}
   <section id="section-1">
     <div class="content-section-a">
       <div class="container">
@@ -49,6 +24,8 @@ layout: frontpage
       </div>
     </div>
   </section>
+{% endif %}
+{% if site.include-section-2 == true %}
   <section id="section-2">
     <div class="content-section-b">
       <div class="container">
@@ -64,6 +41,8 @@ layout: frontpage
       </div>
     </div>
   </section>
+{% endif %}
+{% if site.include-section-3 == true %}
   <section id="section-3">
     <div class="content-section-a">
       <div class="container">
@@ -79,6 +58,8 @@ layout: frontpage
       </div>
     </div>
   </section>
+{% endif %}
+{% if site.include-section-4 == true %}
   <section id="section-4">
     <div class="content-section-b">
       <div class="container">
@@ -95,3 +76,13 @@ layout: frontpage
     </div>
   </section>
 </div>
+{% endif %}
+{% if site.testimonials == true %}
+<div class="section-3 section">
+    <div class="container">
+        <div class="row">
+          {% include general/testimonials.html %}
+        </div>
+    </div>
+</div>
+{% endif %}

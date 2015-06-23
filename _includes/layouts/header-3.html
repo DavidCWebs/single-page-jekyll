@@ -1,0 +1,71 @@
+<div class="left-logo header-option-{{site.header-option}}">
+  <div class="container">
+    <header class="main-logo">
+      <div class="row">
+        <div class="col-xs-8">
+          {% if site.header-logo %}
+          <a href="{{ site.baseurl }}" class="img-link">
+            <h1 class="hide-text show-image">{{ site.title }}</h1>
+            <h4 class="centreline tagline"><span>{{site.tagline}}</span></h4>
+          </a>
+          {% else %}
+          <h1 id="site-title"><a href="/"><i class="fa fa-graduation-cap"></i>&nbsp;{{ site.title }}</a></h1>
+          <h4 class="centreline tagline"><span>{{site.tagline}}</span></h4>
+          {% endif %}
+        </div>
+        <div class="col-xs-4">
+          <span class="pull-right">
+            <a id="header-phone" class="btn btn-lg btn-primary">087 231 6010<i class="fa fa-fw fa-lg fa-phone fa-rotate-270"></i></a>
+          </span>
+        </div>
+      </div>
+    </header>
+    <div class="header-nav">
+      <header class="">
+        <div class="navbar topnav navbar-static-top">
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#top-nav">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="button-label">Menu</span>
+                    <div class = "button-burger">
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                    </div>
+                  </button>
+                </div>
+                <nav id="top-nav" class="collapse navbar-collapse top-nav" role="navigation">
+                  <ul id="menu-grid" class="nav navbar-nav">
+                    {% for node in site.data.nav %}
+                      {% if node.subcategories != null %}
+                      <li class="dropdown">
+                        <a href="{{ site.baseurl }}{{ node.url }}" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">{{ node.title }}&nbsp;<i class="fa fa-angle-down"></i></a>
+                        <ul class="dropdown-menu">
+                        {% for subcategory in node.subcategories %}
+                          {% if page.url == subcategory.subhref/ %}
+                            <li class="active"><a href="{{ site.baseurl }}{{ subcategory.subhref }}" class="active">{{subcategory.subtitle}}</a></li>
+                          {% else %}
+                            <li><a href="{{ site.baseurl }}{{ subcategory.subhref }}">{{subcategory.subtitle}}</a></li>
+                          {% endif %}
+                        {% endfor %}
+                        </ul>
+                      </li>
+                      {% else %}
+                      {% if page.url == node.url/ %}
+                        <li class="active"><a href="{{ site.baseurl }}{{node.url}}" class="active">{{node.title}}</a></li>
+                      {% else %}
+                        <li><a href="{{ site.baseurl }}{{node.url}}">{{node.title}}</a></li>
+                      {% endif %}
+                      {% endif %}
+                    {% endfor %}
+                  </ul>
+                </nav>
+              </div>
+            </div>
+        </div>
+      </header>
+    </div>
+  </div>
+</div>

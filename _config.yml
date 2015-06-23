@@ -9,12 +9,35 @@ section-2: Section 2
 section-3: Section 3
 section-4: Contact
 
+include-section-1: true
+include-section-2: true
+include-section-3: true
+include-section-4: true
+
+# Header Options
+# ------------------------------------------------------------------------------
+header-option: 1
+#header-option: 2
+#header-option: 3
+
+# Page Intro Option
+# ------------------------------------------------------------------------------
+intro-section: full-width-1
+
 # Section images
 # ------------------------------------------------------------------------------
 section-1-image: assets/images/section-1-img.jpg
 section-2-image: assets/images/section-2-img.jpg
 section-3-image: assets/images/section-3-img.jpg
 section-4-image: assets/images/section-4-img.jpg
+
+# If you'd like to include the "Team" section on the front page, set this value to true.
+# If you're including team, you can set values in _data/people.json or _data/people.csv
+team: false
+
+# If you'd like to include the "testimonials" section on the front page, set this value to true.
+# If you're including testimonials, you can set values in _data/testimonials.json or _data/testimonials.csv
+testimonials: true
 
 # Site settings
 # ------------------------------------------------------------------------------
