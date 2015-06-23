@@ -1,0 +1,40 @@
+@fonts: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+@mostly-white: rgba(178, 171, 92, 0.13);
+@grey: #c0c0c0;
+@light-grey: #e7e7e7;
+
+// Set the heading colours: TITLES, h1, h2, h3
+@heading-colour: #fff;
+
+// Set background image opacity
+@opacity: 0.8;
+
+// Main body background colour - the alternate content sections will take this colour
+@body-background-colour: #b1b1b1;
+
+// Alternate content section background colour
+@content-background-colour: rgba(163, 159, 142, 0.37);
+
+// Footer Background Colour
+@footer-background: #393838;
+
+// Footer Text Colour
+@footer-text-colour: #fff;
+
+// Header/Navbar Background Colour
+@header-background: #47576a;
+
+// Blockquote background
+@blockquote-background: @header-background;
+
+// Blockquote text
+@blockquote-text-colour: #fff;
+// Mixins
+// -----------------------------------------------------------------------------
+
+// Set the navbar/header border
+.navbar-border {
+  //border-bottom: solid 10px #fff; // Bottom border only
+  //border: solid 10px #fff; // Border all around header
+  border-bottom: none; // If no border is required, use this to override Bootstrap defaults.
+  }

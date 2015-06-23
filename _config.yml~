@@ -1,0 +1,10 @@
+# Site settings
+title: David's Jekyll Bootstrap
+email: your-email@domain.com
+description: "This is David's Jekyll Site"
+baseurl: ""
+url: "http://yourdomain.com"
+
+# Build settings
+markdown: kramdown
+permalink: pretty

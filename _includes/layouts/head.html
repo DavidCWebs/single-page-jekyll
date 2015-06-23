@@ -1,0 +1,15 @@
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="{{ site.description }}">
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+    <!-- Website by Carawebs:
+    * Rory Egan,
+    * David Egan (@DavidRedBranch),
+    * Elaine Egan.
+    * Bootstrap 3 CSS framework, jQuery, Jekyll site builder, Grunt task runner & Bower package manager.
+    * -->
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/main.min.css">
+</head>

@@ -1,0 +1,97 @@
+---
+layout: frontpage
+---
+<div id="main-content">
+  <div class="first_background" id="top">
+    <div class="intro-header">
+      <div class="container">
+        <div class="row">
+          <div id="text-intro" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="intro-message">
+              {% markdown frontpage/intro-title.md %}
+              <div class="lead">
+                {% markdown frontpage/intro.md %}
+              </div>
+              <div class="intro-phone">
+                <a href="#" class="nonclick-phone btn btn-default btn-lg">
+                  <i class="fa fa-phone fa-fw"></i>
+                  <span class="network-name">Call {{ site.phone }}</span>
+                </a>
+                <a href="tel:{{ site.phonenumber }}" class="click-phone btn btn-default btn-lg">
+                  <i class="fa fa-phone fa-fw"></i>
+                  <span class="network-name">Click to Call</span>
+                </a>
+              </div>
+              <!--{% include general/social.html %}--><!-- This brings through a link to Facebook and an email link -->
+              <div class="page-scroll">
+                <a href="#internal-main">
+                  <i class="fa fa-chevron-down"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section id="section-1">
+    <div class="content-section-a">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5 col-sm-6 col-xs-6">
+            <h2>{{site.section-1}}</h2>
+            {% markdown frontpage/section-1.md %}
+          </div>
+          <div class="col-lg-5 col-lg-offset-2 col-sm-6 col-xs-6">
+            <img class="img-responsive"src="{{ site.section-1-image }}" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="section-2">
+    <div class="content-section-b">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5 col-lg-offset-1 col-sm-push-6 col-sm-6 col-xs-6">
+            <h2>{{site.section-2}}</h2>
+            {% markdown frontpage/section-2.md %}
+          </div>
+          <div class="col-lg-5 col-sm-pull-6 col-sm-6 col-xs-6">
+            <img class="img-responsive" src="{{ site.section-2-image }}" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="section-3">
+    <div class="content-section-a">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5 col-sm-6 col-xs-6">
+            <h2>{{site.section-3}}</h2>
+            {% markdown frontpage/section-3.md %}
+          </div>
+          <div class="col-lg-5 col-lg-offset-2 col-sm-6 col-xs-6">
+            <img class="img-responsive"src="{{ site.section-3-image }}" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="section-4">
+    <div class="content-section-b">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5 col-lg-offset-1 col-sm-push-6 col-sm-6 col-xs-6">
+            <h2>{{site.section-4}}</h2>
+            {% markdown frontpage/section-4.md %}
+          </div>
+          <div class="col-lg-5 col-sm-pull-6 col-sm-6 col-xs-6">
+            <img class="img-responsive" src="{{ site.section-4-image }}" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

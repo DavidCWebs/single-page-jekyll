@@ -1,0 +1,79 @@
+#
+# Edit these settings
+# ------------------------------------------------------------------------------
+
+# Section Headings for the page and Navbar
+#-------------------------------------------------------------------------------
+section-1: About
+section-2: Section 2
+section-3: Section 3
+section-4: Contact
+
+# Section images
+# ------------------------------------------------------------------------------
+section-1-image: assets/images/section-1-img.jpg
+section-2-image: assets/images/section-2-img.jpg
+section-3-image: assets/images/section-3-img.jpg
+section-4-image: assets/images/section-4-img.jpg
+
+# Site settings
+# ------------------------------------------------------------------------------
+title: Site Title, Location
+name: The Business Name
+email: david@carawebs.com
+#facebook: https://www.facebook.com/
+
+# Number to display - shown on the button
+phone: 087 111 1111
+
+# Number to call - used for a link, use format +35361... no spaces
+phonenumber: +353871111111
+
+# Short site description
+description: "This is a fantastic site description"
+
+# Info for the Address Block - leave any variable blank and it won't be added
+# ------------------------------------------------------------------------------
+# Business Name
+business-name: Acme Ltd
+# Address Line 1:
+address-line-1: 12, O'Connell St
+# Address Line 2:
+address-line-2:
+# Address Town:
+address-town: Town
+# Address County:
+address-county: Co. Clare
+# Address Country:
+address-country: Ireland
+# VAT Number:
+VATNo: 1111111
+
+# DO NOT EDIT BELOW THIS LINE
+# ------------------------------------------------------------------------------
+# ##############################################################################
+baseurl: ""
+#url: "http://yourdomain.com"
+exclude: [node_modules]
+# Build settings
+markdown: kramdown
+#exclude: [node_modules]
+#include: [bower_components/font-awesome/fonts]
+permalink: pretty
+version: 1
+image:
+  source: assets
+  output: generated
+  presets:
+    users:
+      attr:
+        class: img-responsive
+        itemprop: image
+      width: 350
+    half:
+      width: 500
+      height: 500
+
+navigable-pages:
+  - title: Home
+    url: /

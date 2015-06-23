@@ -1,0 +1,3 @@
+[submodule "wiki"]
+	path = wiki
+	url = https://Maddog415@bitbucket.org/Maddog415/lrm.git/wiki

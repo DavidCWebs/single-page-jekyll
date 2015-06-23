@@ -1,0 +1,6 @@
+#About this site:
+
+This is a Bootstrap Jekyll website.
+
+The content is brought through in a modular fashion, with the content being written as includes in
+the markdown format. The Gruntfile runs Livereload alongside the other standard tasks. All the images are responsive. See the site wiki for more info.
