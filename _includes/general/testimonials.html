@@ -1,0 +1,13 @@
+<div class="col-md-12 text-center">
+    <h2 class="text-center">What Our Clients Say</h2>
+</div>
+{% for person in site.data.testimonials %}
+    <div class="col-md-6">
+      <blockquote>
+      <h3>{{ person.first-name }}&nbsp;{{ person.second-name }}, {% if person.title != nil %}{{ person.title }}{% endif %}</h3>
+      <footer>
+      {{ person.description}}
+      </footer>
+      </blockquote>
+    </div>
+{% endfor %}

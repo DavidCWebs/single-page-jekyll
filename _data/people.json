@@ -1,0 +1,31 @@
+[
+  {
+    "first-name": "John",
+    "second-name": "Mruuuu",
+    "title": "Boss",
+    "description": "Lorem ipsum",
+    "phone": "087 123 4567",
+    "email": "info@carawebs.com"
+  },
+  {
+    "first-name": "Mary",
+    "second-name": "Jones",
+    "title": "Slave",
+    "description": "Useless...",
+    "phone": "087 123 4569"
+  },
+  {
+    "first-name": "Narrbort",
+    "second-name": "DeLarge",
+    "title": "Scraper of Bottoms",
+    "description": "Smelly",
+    "phone": "087 123 6666"
+  },
+  {
+    "first-name": "Rory",
+    "second-name": "Smoorg",
+    "title": "Scraper of Bottoms",
+    "description": "Smelly",
+    "phone": "087 123 1111"
+  }
+]

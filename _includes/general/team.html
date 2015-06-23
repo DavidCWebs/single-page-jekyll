@@ -1,0 +1,23 @@
+<div class="section-4 section alt-colour">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+              <div class="lead text-center">
+                <h2>Team</h2>
+                {% markdown bios/intro.md %}
+              </div>
+            </div>
+        </div>
+        <div class="row">
+          {% for person in site.data.people %}
+            <div class="col-md-4">
+              <img src="http://pingendo.github.io/pingendo-bootstrap/assets/user_placeholder.png"
+              class="center-block img-circle img-responsive">
+              <h3>{{ person.first-name }}&nbsp;{{ person.second-name }}</h3>
+              <h4>{{ person.title }}</h4>
+              {{ person.description}}
+            </div>
+          {% endfor %}
+        </div>
+    </div>
+</div>
