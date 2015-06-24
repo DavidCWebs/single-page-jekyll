@@ -9,11 +9,6 @@ section-2: Section 2
 section-3: Section 3
 section-4: Contact
 
-include-section-1: true
-include-section-2: true
-include-section-3: true
-include-section-4: true
-
 # Header Options
 # ------------------------------------------------------------------------------
 header-option: 1
@@ -22,7 +17,7 @@ header-option: 1
 
 # Page Intro Option
 # ------------------------------------------------------------------------------
-intro-section: full-width-1
+intro-section: full-width-2
 
 # Section images
 # ------------------------------------------------------------------------------
@@ -37,13 +32,14 @@ team: false
 
 # If you'd like to include the "testimonials" section on the front page, set this value to true.
 # If you're including testimonials, you can set values in _data/testimonials.json or _data/testimonials.csv
-testimonials: true
+testimonials: false
 
 # Site settings
 # ------------------------------------------------------------------------------
 title: Site Title, Location
 name: The Business Name
 email: david@carawebs.com
+facebook: qwerty
 #facebook: https://www.facebook.com/
 
 # Number to display - shown on the button

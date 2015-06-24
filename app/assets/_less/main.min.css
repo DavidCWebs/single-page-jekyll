@@ -7771,6 +7771,66 @@ html {
   line-height: 30px;
   background: #b1b1b1;
 }
+.intro-2-right {
+  padding-top: 30px;
+  padding-bottom: 100px;
+}
+.intro {
+  display: table;
+  width: 100%;
+  height: auto;
+  /*padding-top: 200px 0;
+			margin-top: 195px;*/
+  text-align: center;
+  color: white;
+  background: url(../assets/images/big-images/main-shutters.jpg) no-repeat bottom center scroll;
+  background-color: black;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+.intro .intro-body {
+  padding-top: 195px;
+  display: table-cell;
+  vertical-align: middle;
+}
+.intro .intro-body .brand-heading {
+  font-size: 40px;
+}
+.intro .intro-body .intro-text {
+  font-size: 18px;
+}
+@media (min-width: 768px) {
+  .intro {
+    height: 100%;
+    padding: 0;
+  }
+  .intro .intro-body .brand-heading {
+    font-size: 100px;
+  }
+  .intro .intro-body .intro-text {
+    font-size: 26px;
+  }
+}
+#go-top {
+  position: fixed;
+  bottom: 100px;
+  right: 100px;
+  padding: 10px;
+  display: none;
+}
+a#go-top {
+  color: #428bca;
+  font-size: 40px;
+}
+.page-scroll .fa-chevron-down {
+  font-size: 40px;
+  color: #fff;
+}
+.page-scroll .fa-chevron-down:hover {
+  opacity: 0.9;
+}
 blockquote {
   padding: 20px;
   background: #47576a;
@@ -7789,6 +7849,12 @@ blockquote {
 }
 .lead {
   color: #fff;
+}
+#intro-content ul {
+  margin-top: 0px;
+}
+#main-content {
+  margin-top: 0px;
 }
 #main-content ul {
   margin-left: 0;
@@ -7809,6 +7875,15 @@ blockquote {
 }
 #main-content ul li:before {
   content: '\f00c';
+}
+.social-button a {
+  background: transparent;
+  border: solid 2px #fff;
+  color: #fff;
+  margin-bottom: 5px;
+}
+.intro-phone {
+  margin-bottom: 20px;
 }
 .intro-phone a {
   background: transparent;
@@ -7874,6 +7949,7 @@ h2 {
 .navbar-header {
   padding-left: 0;
   padding-right: 0;
+  padding-bottom: 0px;
 }
 .navbar-default {
   border-bottom: none;
@@ -8002,7 +8078,7 @@ h2 {
   margin-bottom: 0;
 }
 .banner-social-buttons {
-  margin-top: 0;
+  margin-bottom: 50;
 }
 .list-inline > li {
   margin-bottom: 10px;

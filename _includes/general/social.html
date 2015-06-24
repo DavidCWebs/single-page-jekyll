@@ -1,11 +1,24 @@
-<hr class="intro-divider">
-<p class="lead">Contact us:</p>
-<ul class="list-inline intro-social-buttons">
-  <li><a href="mailto:{{ site.email }}" title="Click to email me - opens your default email program" class="btn btn-default btn-lg">
-    <i class="fa fa-envelope fa-fw"></i>
-    <span class="network-name">Email Me</span></a> </li>
-  <li><a href="{{ site.facebook }}" title="Click here to follow me on Facebook" class="btn btn-default btn-lg">
-    <i class="fa fa-facebook fa-fw"></i>
-    <span class="network-name">Follow me on Facebook</span></a>
-  </li>
-</ul>
+<div class="social-button">
+  <hr class="intro-divider">
+  <p class="lead">Contact us:</p>
+  <ul class="list-unstyled intro-social-buttons">
+    <li>
+      {% if site.email != nil %}
+
+      <a href="mailto:{{ site.email }}" title="Click to email me - opens your default email program" class="btn btn-default btn-lg">
+      <i class="fa fa-envelope fa-fw"></i>
+      <span class="network-name">Email Me</span></a>
+
+      {% endif %}
+    </li>
+    <li>
+      {% if site.facebook != nil %}
+
+      <a href="{{ site.facebook }}" title="Click here to follow me on Facebook" class="btn btn-default btn-lg">
+      <i class="fa fa-facebook fa-fw"></i>
+      <span class="network-name">Follow me on Facebook</span></a>
+
+      {% endif %}
+    </li>
+  </ul>
+</div>

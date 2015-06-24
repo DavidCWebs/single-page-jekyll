@@ -3,7 +3,7 @@
 
   {% include layouts/head.html %}
 
-    <body>
+  <body class="main {% if page.title %} {{ page.title }}{% else %}{{ site.title }}{% endif %}">
 
     {% if site.header-option == 1 %}
       {% include layouts/header.html %}
