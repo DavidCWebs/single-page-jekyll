@@ -1,14 +1,16 @@
 ---
 layout: frontpage
 ---
-<div id="main-content">
+<div id="wrapper">
+<div id="intro-content">
   {% if site.intro-section == "full-width-1" %}
-  {% include frontpage/full-width-1.html %}
-{% endif %}
-{% if site.intro-section == "full-width-2" %}
+    {% include frontpage/full-width-1.html %}
+  {% endif %}
+  {% if site.intro-section == "full-width-2" %}
     {% include frontpage/full-width-2.html %}
-{% endif %}
-{% if site.include-section-1 == true %}
+  {% endif %}
+</div>
+<div id="main-content">
   <section id="section-1">
     <div class="content-section-a">
       <div class="container">
@@ -24,8 +26,6 @@ layout: frontpage
       </div>
     </div>
   </section>
-{% endif %}
-{% if site.include-section-2 == true %}
   <section id="section-2">
     <div class="content-section-b">
       <div class="container">
@@ -41,8 +41,6 @@ layout: frontpage
       </div>
     </div>
   </section>
-{% endif %}
-{% if site.include-section-3 == true %}
   <section id="section-3">
     <div class="content-section-a">
       <div class="container">
@@ -58,8 +56,6 @@ layout: frontpage
       </div>
     </div>
   </section>
-{% endif %}
-{% if site.include-section-4 == true %}
   <section id="section-4">
     <div class="content-section-b">
       <div class="container">
@@ -76,7 +72,6 @@ layout: frontpage
     </div>
   </section>
 </div>
-{% endif %}
 {% if site.testimonials == true %}
 <div class="section-3 section">
     <div class="container">
@@ -86,3 +81,4 @@ layout: frontpage
     </div>
 </div>
 {% endif %}
+</div>

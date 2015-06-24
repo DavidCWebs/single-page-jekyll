@@ -1,17 +1,14 @@
-<div class="cover">
-  <div class="cover-image" style="background-image: url('{{ site.baseurl }}/{{site.frontpage-lead-image}}')"></div>
+<div class="intro">
+  <div class="intro-body">
     <div class="container">
-    <div class="row">
-      <div class="col-md-8 col-md-offset-2">
-        <div class="well text-center opaque">
-          <h1>{{ site.title }}</h1>
+      <div class="row">
+        <div class="col-md-6">
+          <h1 class="brand-heading">{{ site.title }}</h1>
           {% markdown frontpage/intro.md %}
-          {% include general/social.html %}
-          <div class="page-scroll">
-            <a href="#internal-main">
-              <i class="fa fa-chevron-down"></i>
-            </a>
-          </div>
+          {% include frontpage/intro-phone.html %}
+        </div>
+        <div class="col-md-5 offset-1 intro-2-right">
+          <img class="img-responsive"src="{{ site.section-1-image }}" alt="">
         </div>
       </div>
     </div>
